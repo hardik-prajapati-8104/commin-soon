@@ -24,7 +24,7 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 }
 
 // Your email address
-$to = "hardikprajapati8104@gmail.com";
+$to = "workhomesafetysolution@gmail.com";
 
 // Email subject
 $subject = "New Contact Form Enquiry - Work Home Safety Solution";

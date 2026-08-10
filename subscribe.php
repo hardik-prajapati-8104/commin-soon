@@ -29,7 +29,7 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 // YOUR EMAIL ADDRESS
 // ========================================
 
-$to = "hardikprajapati8104@gmail.com";
+$to = "workhomesafetysolution@gmail.com";
 
 
 // ========================================
