@@ -1,4 +1,26 @@
  
+<?php
+  function asset($path)
+  {
+      return getBaseUrl().ltrim($path, '/'); 
+  }
+  function getBaseUrl() {
+      // Determine the protocol (http or https)
+      $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http";
+
+      // Get the host name (e.g., www.example.com or localhost)
+      $host = $_SERVER['HTTP_HOST'];
+
+      // Get the directory path of the script, removing the script name itself
+      $script_name = $_SERVER['SCRIPT_NAME'];
+      $path = str_replace(basename($script_name), "", $script_name);
+
+      // Construct the base URL
+      $base_url = $protocol . "://" . $host . $path;
+
+      return $base_url;
+  }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,8 +38,8 @@
   <!-- Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" /> 
-
-  <link rel="stylesheet" href="assets/css/style.css">
+ 
+    <link rel="stylesheet" href="<?= asset('assets/css/style.css') ?>"> 
 </head>
 <body>  
  

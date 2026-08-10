@@ -6,8 +6,8 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  color: #fff;
-  background: url("../images/work.jpeg") center center/cover no-repeat;
+  color: #fff; 
+  background: url("<?= asset('assets/images/work.jpeg') ?>") center center/cover no-repeat;
   min-height: 100vh;
   overflow-x: hidden;
 }

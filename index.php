@@ -116,5 +116,4 @@
 
 </section>
 
-<script src="assets/js/countdown.js"></script>
- 
+<script src="<?= asset('assets/js/countdown.js') ?>"></script>
