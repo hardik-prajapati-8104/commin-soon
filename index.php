@@ -1,7 +1,11 @@
 <?php
   include_once('elements/header.php');
 ?>
- 
+ <style>
+    body {
+        background: url("<?= asset('assets/images/work.jpeg') ?>") center center / cover no-repeat;
+    }
+</style>
 
 <div class="overlay"></div>
 
