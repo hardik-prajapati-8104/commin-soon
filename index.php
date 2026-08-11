@@ -94,7 +94,7 @@
                         type="email"
                         name="email"
                         class="subscribe-input"
-                        placeholder="Enter your email address"
+                        placeholder="Enter your email"
                         required
                     >
 

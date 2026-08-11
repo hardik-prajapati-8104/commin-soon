@@ -29,7 +29,7 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 // YOUR EMAIL ADDRESS
 // ========================================
 
-$to = "workhomesafetysolution@gmail.com";
+$to = "hardikprajapati8104@gmail.com";
 
 
 // ========================================
@@ -63,12 +63,11 @@ $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 // SEND EMAIL
 // ========================================
 
+// Send email
 if (mail($to, $subject, $body, $headers)) {
 
-    echo "<script>
-        alert('Thank you for subscribing!');
-        window.location.href = 'index.html';
-    </script>";
+    header('Location: thank-you.php');
+    exit;
 
 } else {
 
@@ -76,5 +75,4 @@ if (mail($to, $subject, $body, $headers)) {
         alert('Unable to subscribe at the moment. Please try again.');
         window.history.back();
     </script>";
-
 }

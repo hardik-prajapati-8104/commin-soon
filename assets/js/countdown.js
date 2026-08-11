@@ -1,5 +1,5 @@
 // Launch Date
-const launchDate = new Date("December 31, 2026 23:59:59").getTime();
+const launchDate = new Date("september 1, 2026 23:59:59").getTime();
 
 const timer = setInterval(function () {
 
