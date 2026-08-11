@@ -137,7 +137,7 @@
             Your email has been successfully submitted.
         </p>
 
-        <a href="index.html" class="back-btn">
+        <a href="index.php" class="back-btn">
             Back to Home
         </a>
 
